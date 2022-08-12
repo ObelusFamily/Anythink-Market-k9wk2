@@ -31,6 +31,7 @@ class Item extends React.Component {
 
   componentWillUnmount() {
     this.props.onUnload();
+    console.table(this.props.item)
   }
 
   render() {
